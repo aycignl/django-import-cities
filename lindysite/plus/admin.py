@@ -30,7 +30,7 @@ class TeacherAdmin(admin.ModelAdmin):
     def get_person_city(self,obj):
         return obj.person.city
 
-admin.site.register(Event, EventAdmin)
-admin.site.register(Teacher, TeacherAdmin)
-admin.site.register(TeachesInEvent, TeachesInEventAdmin)
-admin.site.register(Person, PersonAdmin)
+#admin.site.register(Event, EventAdmin)
+#admin.site.register(Teacher, TeacherAdmin)
+#admin.site.register(TeachesInEvent, TeachesInEventAdmin)
+#admin.site.register(Person, PersonAdmin)
