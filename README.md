@@ -1,9 +1,16 @@
 # django-import-cities
 
+Install
+
+
     python3 -m venv cities-env
     . cities-env/bin/activate #or source
     pip install -r lindysite/requirements.txt
     pip install ipython
+
+
+Database:
+
 
     ./manage.py migrate
     ./manage.py makemigrations plus location
@@ -11,9 +18,13 @@
     ./manage.py migrate plus
     ./manage.py createsuperuser
 
-export JAVA_HOME=`/usr/libexec/java_home -v '1.8*'`
-export CLASSPATH="$CLASSPATH:/Users/cagil/work/django-import-cities/stanford-ner-2015-12-09"
-export STANFORD_MODELS="/Users/cagil/work/django-import-cities/stanford-ner-2015-12-09/classifiers"
+
+NER:
+
+
+    export JAVA_HOME=`/usr/libexec/java_home -v '1.8*'`
+    export CLASSPATH="$CLASSPATH:/Users/cagil/work/django-import-cities/stanford-ner-2015-12-09"
+    export STANFORD_MODELS="/Users/cagil/work/django-import-cities/stanford-ner-2015-12-09/classifiers"
 
 
 ## References:
